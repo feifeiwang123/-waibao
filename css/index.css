@@ -1,0 +1,715 @@
+/*清除默认样式*/
+body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, table, tbody, thead, tfoot, tr, th, td, caption, a, input, form, select, option, label, textarea, img, span, i, b, em, strong, sub, sup, u {
+    margin: 0;
+    padding: 0;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+//font-size: 12 px;
+//-webkit-user-select: none;
+}
+
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+i, em {
+    font-style: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+img, input {
+    border: none;
+    vertical-align: middle;
+    outline: none;
+}
+
+.clear {
+    clear: both;
+    content: " ";
+    display: table;
+}
+.none{
+    display: none;
+}
+
+.w100B{
+    width: 100%;
+}
+
+a, a:hover, a:visited, a:target {
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+    color: #424242;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    /*overflow-x: hidden;*/
+}
+.w1200{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+.mw1700{
+    max-width: 1700px;
+    margin: auto;
+}
+/*--------------------------------*/
+
+
+/*----------  header begin   ---------*/
+.header{
+    position: fixed;
+    top: 0;
+    z-index: 700;
+    width: 100%;
+    background: rgba(25,25,25,0);
+    text-align: center;
+    -webkit-transition: background .5s;
+    -moz-transition: background .5s;
+    -o-transition: background .5s;
+    transition: background .5s;
+}
+.header.fixed{
+    background: #ccc;
+}
+.header.fixed .header-text{
+    width: 100%;
+}
+.header.fixed .header-text .telephone-number {
+    margin-right: -20px;
+    opacity: 1;
+}
+.header .telephone-number{/*电话号码*/
+    margin-top: 6px;
+    float: right;
+    margin-right: -215px;
+    margin-left: 20px;
+    white-space: nowrap;
+    color: #9fd8eb;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 15px 20px 12px;
+    position: relative;
+    z-index: 100;
+    opacity: 0;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.header .header-text {
+    width: 1160px;
+    height: 62px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 2;
+    -webkit-transition: width .5s;
+    -moz-transition: width .5s;
+    -o-transition: width .5s;
+    transition: width .5s;
+}
+.header .logo {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+    height: 50px;
+    width: 128px;
+    position: relative;
+    z-index: 100;
+    top: 6px;
+    /*background: url(../img/logo3.png);*/
+}
+.header .nav {
+    display: inline-block;
+    vertical-align: top;
+    float: right;
+    position: relative;
+    z-index: 100;
+    height: 100%;
+}
+.header .nav>li {
+    position: relative;
+    float: left;
+    height: 100%;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px;
+    cursor: pointer;
+}
+.header .nav>li span {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 10px;
+}
+.header .nav>li span:hover{
+    border-bottom: 2px solid #9fd8eb;
+}
+
+.header .nav>li.select span{
+    border-bottom: 2px solid #9fd8eb;
+}
+
+    /* ----------- header end  导航头结束----------*/
+
+
+
+/*轮播图部分 begin*/
+.main{
+    padding-top: 662px;
+}
+.c-first{
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #151d32;
+}
+.homepage{
+    position: relative;
+    overflow: hidden;
+    left: 0;
+    height: 100%;
+    /*width: 100%;*/
+    width: 300%;
+}
+.home-nav{
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    z-index: 3;
+}
+.home-nav .btn{
+    position: absolute;
+    top: -25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgba(26,37,63,0);
+    opacity: .3;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background .3s,opacity .3s,transform 0s;
+    -webkit-transition: background .3s,opacity .3s,transform 0s;
+}
+.home-nav .btn:hover{
+    background: #1a253f;
+    opacity: 1;
+}
+.home-nav .btn.left{
+    left: 90px;
+}
+.home-nav .btn.right{
+    right: 90px;
+}
+.homepage .carousel{
+    /*position: absolute;*/
+    /*top: 0px;*/
+    /*overflow: hidden;*/
+    width: 33.33%;
+    /*width: 100%;*/
+    height: 100%;
+    float: left;
+}
+.homepage .carousel.twop{
+    background: url(../img/banner1.jpg) no-repeat;
+}
+/*让视频扩展到全屏的方法：*/
+video#bgvid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    /*background: url(../img/video/video.mp4) no-repeat;*/
+    /*background-size: cover;*/
+}
+/*  轮播完成   */
+
+
+/*---------------轮播图中内容----------------------*/
+.homepage .carousel .video-text{
+    position: relative;
+    z-index: 100;
+    padding: 130px 0;
+    margin: 1% 11% 0;
+    text-align: center;
+}
+.homepage .carousel .video-text h2{
+    font-size: 56px;
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-weight: normal;
+    width: 100%;
+}
+.homepage .carousel .video-text h2:before,.homepage .carousel .video-text h2:after {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 2px;
+    background: #fff;
+    top: 50%;
+}
+.homepage .carousel .video-text h2:before{
+    left: 60px;
+}
+.homepage .carousel .video-text h2:after{
+    right: 60px;
+}
+.homepage .carousel .video-text h2.image-p:before{
+    left: 190px;
+}
+.homepage .carousel .video-text h2.image-p:after{
+    right: 190px;
+}
+.homepage .carousel .video-text p.big{
+    margin: 20px auto 25px;
+    font-size: 85px;
+    color: #fff;
+    letter-spacing: .2em;
+}
+.homepage .carousel .video-text p.info{
+    font-size: 26px;
+    color: #fefefe;
+}
+.homepage .carousel .video-text p.info span{
+    color: #e8c426;
+}
+.homepage .carousel .video-text p.server{
+    font-size: 36px;
+    color: #f5f0f0;
+    margin-top: 10px;
+    letter-spacing: .2em;
+}
+.homepage .carousel .video-text p.server span{
+    color: #e8c426;
+    font-style: normal;
+    position: relative;
+    letter-spacing: .1em;
+    font-size: 60px;
+}
+/*-----------轮播 内容首页完----------*/
+
+
+
+/*-------------服务 begin---------------*/
+/*底部滚动条 begin*/
+.main .c-service{
+    text-align: center;
+    background: #fff;
+    position: relative;
+    z-index: 11;
+}
+.main .c-service .foot-turn{
+    position: absolute;
+    top: -75px;
+    width: 100%;
+    height: 75px;
+    padding-top: 22px;
+    background: rgba(0,0,0,0.45);
+    overflow: hidden;
+    z-index: 3;
+    text-align: center;
+}
+.c-service .foot-turn .all-company{
+    height: 32px;
+    padding-left: 180px;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.c-service .foot-turn .all-company .h-introduce{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 1.6rem;
+    color: #9fd8eb;
+    line-height: 32px;
+}
+.c-service .foot-turn .all-company .h-text{
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    width: 100%;
+}
+
+.c-service .foot-turn .all-company .h-text li {
+    line-height: 32px;
+    float: left;
+    width: 33.33333333%;
+    color: #fff;
+    vertical-align: bottom;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+
+.c-service .foot-turn .all-company .h-text li>span {
+    margin-right: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: top;
+    line-height: 32px;
+    max-width: 220px;
+}
+
+/*---首页底部滚动签约公司  end---*/
+
+/*服务 begin*/
+.main .c-service .text-title{
+    margin-bottom: 70px;
+    padding-top: 28px;
+}
+.main .text-title{
+    position: relative;
+    margin: auto;
+    border-bottom: 1px solid #999;
+    font-size: 36px !important;
+    line-height: 80px;
+    color: #333 !important;
+    text-align: left;
+}
+.main .text-title:after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 105px;
+    height: 8px;
+    background: #9fd8eb;
+    content: '';
+}
+.c-service .service-content{
+    position: relative;
+    height: 455px;
+    overflow: hidden;
+}
+
+.c-service .service-content, .c-service .service-type {
+    float: left;
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+.c-service .service-content li{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 455px;
+    padding: 0 340px 0 70px;
+}
+
+.c-service .service-content li:nth-child(1){
+    background: url(./../img/customer1.jpg) 260px center no-repeat;
+}
+.c-service .service-content .service-box{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -ms-transform: translate3d(0, -50%, 0);
+    -o-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    text-align: left;
+}
+.service-content .service-box h4{
+    font-size: 24px;
+
+}
+.service-content .service-box p:nth-child(2){
+    font-size: 16px;
+    color: #4d4d4d;
+    margin: 16px 0 10px;
+}
+.service-content .service-box p:nth-child(3){
+    font-size: 16px;
+    color: #9fd8eb;
+}
+
+.c-service .service-type li {
+    float: left;
+    width: 50%;
+    padding: 0 40px 15px;
+}
+.c-service .service-type li .type-box{
+    position: relative;
+    height: 187px;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -o-transition: all .2s;
+    transition: all .2s;
+    border: 3px solid transparent;
+    width: 175px;
+}
+
+.c-service .service-type li .type-box:hover{
+    border-color: #9fd8eb;
+    box-shadow: 2px 2px 10px #ccc;
+    -webkit-transform: translate3d(-5px, -5px, 0);
+    -ms-transform: translate3d(-5px, -5px, 0);
+    -o-transform: translate3d(-5px, -5px, 0);
+    transform: translate3d(-5px, -5px, 0);
+    color: #9fd8eb;
+}
+.c-service .service-type li .type-box:hover .type-name{
+    color: #9fd8eb;
+    margin-top: -25px;
+}
+.c-service .service-type li .type-box:hover .type-btn a{
+    opacity: 1;
+}
+
+.c-service .service-type li .type-icon{
+    display: block;
+    height: 150px;
+    line-height: 150px;
+    font-size: 80px;
+    color: #7f7f7f;
+    position: relative;
+    z-index: 1;
+    -webkit-transition: color 300ms ease-in;
+    transition: color 300ms ease-in;
+}
+
+.c-service .service-type li .type-name{
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 1;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.c-service .service-type li .type-btn{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    z-index: 1;
+    width: 100%;
+}
+
+.c-service .service-type li .type-btn a{
+    display: inline-block;
+    padding: 0 10px;
+    background: #e8c426;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 28px;
+    color: #4d4d4d;
+    opacity: 0;
+    transition: all .2s .2s;
+}
+.c-service .slogan{
+    height: 68px;
+    background: #e8c426;
+    font-size: 20px;
+    color: #4d4d4d;
+    line-height: 68px;
+}
+
+
+/*服务 end*/
+
+
+
+
+
+/* ----------------- 解决方案begin -----------------*/
+
+.main .c-programme{
+    text-align: left;
+    background: #fff;
+    position: relative;
+    z-index: 11;
+    padding-bottom: 50px;
+}
+.main .c-programme .text-title {
+    padding-top: 40px;
+}
+
+
+/* ----------------- 解决方案end -----------------*/
+
+
+
+
+
+/* ----------------- 优势begin -----------------*/
+.main .c-advantage,.main .c-customer,.main .c-about,.main .c-contact,.main .c-bulletin,.main .c-link{
+    text-align: left;
+    background: #fff;
+    position: relative;
+    z-index: 11;
+    padding-bottom: 50px;
+}
+.main .c-advantage .text-title {
+    padding-top: 30px;
+}
+.main .c-advantage .list-content {
+    position: relative;
+    width: 1100px;
+    margin: auto;
+}
+.c-advantage .adv-list1{
+    padding-top: 40px;
+}
+.c-advantage .adv-list1 .list-content{
+    height: 350px;
+    padding-right: 600px;
+    padding-top: 50px;
+    background: url(../img/p1.png);
+}
+.c-advantage .adv-list1 .list-content,.c-advantage .adv-list3 .list-content{
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.main .c-advantage h4 {
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #4d4d4d;
+}
+.main .c-advantage .desc {
+    font-size: 20px;
+    color: #4d4d4d;
+    line-height: 38px;
+}
+.main .c-advantage .desc span.stress {
+    font-size: 26px;
+    color: #e8c426;
+}
+#d_tab29 .card-content{
+    margin-top: -35px;
+    font-size: 20px;
+}
+/* ----------------- 优势end -----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*动画*/
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(.3, .3, .3);
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}

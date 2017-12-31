@@ -1,0 +1,446 @@
+body, div, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, p, table, tbody, thead, tfoot, tr, th, td, caption, a, input, form, select, option, label, textarea, img, span, i, b, em, strong, sub, sup, u {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);/*去掉a标签,input,button等按钮的默认边框和背景色*/
+    -webkit-overflow-scrolling:touch;/*增加滚动效果,让滚动效果更加流畅*/
+    -webkit-user-select: none;/*禁止用户选中文本内容*/
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+i, em {
+    font-style: normal;
+}
+
+ul, ol {
+    list-style: none;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+img, input {
+    border: none;
+    outline: none;
+}
+
+.clear {
+    clear: both;
+    content: " ";
+    display: table;
+}
+.dis_block{display: block !important;}
+.none{
+    display: none !important;
+}
+
+.w100B{
+    width: 100%;
+}
+
+a, a:hover, a:visited, a:target {
+    text-decoration: none;
+}
+
+a {
+    cursor: pointer;
+    color: #424242;
+}
+html {font-size: 62.5%;/*10 ÷ 16 × 100% = 62.5%*/}
+body {font-size: 1.4rem;/*1.4 × 10px = 14px */}
+h1 { font-size: 2.4rem;/*2.4 × 10px = 24px*/}
+
+
+/*------- logo begin -------*/
+.header{
+    position: relative;
+    z-index: 10;
+}
+.logo{
+    padding: .05rem;
+    width: 100%;
+}
+.logo .logo_a{
+    float: left;
+    width: .90rem;
+    height: .36rem;
+    /*background: url(../img/logo_m.png) no-repeat;*/
+    background-size: 100%;
+}
+.header .header_number {
+    float: right;
+    font-size: .14rem;
+    color: #fff;
+}
+/*------- logo end -------*/
+
+
+.all-content,body{background: #F7F8FA;}
+.all-content .text-title{
+    text-align: center;
+    font-weight: normal;
+    font-size: .18rem;
+}
+/* ------ c-first begin -----------*/
+.c-first{
+    margin-top: -.46rem;
+}
+.swiper-container, .swiper-wrapper, .swiper-slide {
+    height: 1.8rem;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-pagination {
+    display: none;
+}
+
+.text-content{
+    position: absolute;
+    left: 5%;
+    top: 25%;
+    color: #fff;
+    font-size: .22rem;
+
+}
+.text-content h2{
+    font-weight: normal;
+    font-size: .22rem;
+}
+.text-content p{
+    margin-top: .05rem;
+    font-size: .12rem;
+    line-height: .18rem;
+}
+/* ------ c-first end -----------*/
+
+
+
+/* ------ c-service begin -----------*/
+.c-service{
+    /*background: #fff;*/
+    padding: .1rem 0;
+}
+.c-service .service-box{
+    width: 100%;
+}
+.c-service .service-box .service-li{
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.c-service .service-box .service-li .service-li-div{
+    margin: 0 .05rem .1rem;
+    height: 1rem;
+    display: block;
+}
+
+.c-service .service-box .service-li .img1{
+    background: url(../img/pinpai.jpg) no-repeat;
+    background-size: 100%;
+}
+.c-service .service-box .service-li .img2{
+    background: url(../img/mian.jpg) no-repeat;
+    background-size: 100%;
+}
+.c-service .service-box .service-li .img3{
+    background: url(../img/liwu.jpg) no-repeat;
+    background-size: 100%;
+}
+.c-service .service-box .service-li .img4{
+    background: url(../img/tang.jpg) no-repeat;
+    background-size: 100%;
+}
+.c-service .service-box .service-li .img5{
+    background: url(../img/diancan.jpg) no-repeat;
+    background-size: 100%;
+}
+.c-service .service-box .service-li .img6{
+    background: url(../img/mijiu.jpg) no-repeat;
+    background-size: 100%;
+}
+
+.c-service .service-box .service-li .service-li-div .img_text{
+    padding-top: .65rem;
+    font-size: .18rem;
+    color: #fff;
+}
+
+.c-service .food-number{
+    margin: .1rem;
+    border-radius: .05rem;
+    font-size: .25rem;
+    text-align: center;
+    color: #fff;
+    background: -webkit-linear-gradient(left, #FF3B3A , #FF7F3A); /* Safari 5.1 - 6.0 */
+
+    background: -o-linear-gradient(right, #FF3B3A, #FF7F3A); /* Opera 11.1 - 12.0 */
+
+    background: -moz-linear-gradient(right, #FF3B3A, #FF7F3A); /* Firefox 3.6 - 15 */
+
+    background: linear-gradient(to right, #FF3B3A , #FF7F3A); /* 标准的语法 */
+}
+    /* ------ c-service end -----------*/
+
+.c-service .food-number a{
+    display: block;
+    padding: .1rem 0;
+    color: #fff;
+}
+
+
+
+/*--------- c-about begin  --------*/
+.c-about{
+    background: #fff;
+}
+.c-about .about-box{
+    margin-top: .05rem;
+}
+.c-about .about-box li{
+    text-align: center;
+    padding: .05rem;
+    font-size: .12rem;
+    line-height: .22rem;
+    color: #ccc;
+}
+/*--------- c-about end  --------*/
+
+
+
+/*---------- footer the up 开始 -----------*/
+
+.fixedNavBut{
+    position: fixed;
+    width: .45rem;
+    height: .35rem;
+    bottom: .6rem;
+    left: .1rem;
+    z-index: 80;
+    opacity: 1;
+}
+#fixed_nav_but .navMoreBut_4 {
+    box-shadow: -1px 1px 0 royalblue, -1px -1px 0 royalblue, 1px 1px 0 royalblue, 1px -1px 0 royalblue;
+}
+#fixed_nav_but .navMoreBut_4 {
+    background: royalblue;
+}
+.navMoreBut_4 {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    z-index: 5;
+    border: 2px solid #fff;
+}
+
+.menu{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 98;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.menu-box{
+    width: 60%;
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    z-index: 1001;
+    right: -100%;
+    top: 0;
+    padding: .1rem 0;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    background-color: #333436!important;
+    box-shadow: -2px 0 5px #000;
+}
+.menu-box[state='open'] {
+    right: 0;
+}
+.menu-box ul li:first-child {
+    border-top: none;
+}
+
+.menu-box ul li{
+    border-width: 0px 0px 2px;
+    border-style: solid;
+    border-color: #45494C;
+    font-size: .18rem;
+}
+.menu-box ul li a{
+    color: #fff;
+    position: relative;
+    display: block;
+    padding: 4% 0px 4% .25rem;
+}
+
+.menu-box ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #5B5D5E;
+    height: 1px;
+    width: 4px;
+    box-shadow: -1px 1px 0 #5B5D5E, -2px 2px 0 #5B5D5E, -3px 3px 0 #5B5D5E, -4px 4px 0 #5B5D5E, -5px 5px 0 #5B5D5E, -1px -1px 0 #5B5D5E, -2px -2px 0 #5B5D5E, -3px -3px 0 #5B5D5E, -4px -4px 0 #5B5D5E, -5px -5px 0 #5B5D5E;
+    left: 15px;
+    top: 50%;
+}
+
+.footer_up{
+
+}
+
+.contact_us{
+    position: fixed;
+    bottom: 0;
+    font-size: .16rem;
+    height: .4rem;
+    line-height: .4rem;
+    width: 100%;
+    text-align: center;
+}
+.contact_us .ask_qq{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: #00A5FF;
+    color: #fff;
+    position: relative;
+}
+.contact_us .call_number{
+    float: right;
+    width: 50%;
+    height: 100%;
+    background: royalblue;
+    color: #fff;
+    position: relative;
+}
+.contact_us .ask_qq img,.contact_us .call_number img{
+    position: absolute;
+    top: 13%;
+    width: 15%;
+}
+/*---------- footer the up 结束 -----------*/
+
+
+/*------ footer begin -----*/
+.footer{
+    padding-bottom: .4rem;
+}
+/*------ footer begin -----*/
+
+
+/*-------------  brand begin  ------------*/
+.brand{background: #fff;}
+.brand-txt{
+    padding: .2rem;
+    text-align: center;
+    font-size: .2rem;
+    color: royalblue;
+}
+.brand ul{
+    padding: .2rem;
+    font-size: 0.14rem;
+    line-height: .23rem;
+}
+.brand ul li {
+    color: #545454;
+    padding-bottom: .2rem;
+    text-indent: .3rem;
+}
+.brand ul li img{width: 100%;}
+/*-------------  brand end  ------------*/
+
+/*-------------  address begin  ------------*/
+.address{
+    margin: .1rem;
+    background: #fff;
+}
+.address-box{
+    font-size: .14rem;
+    margin: 0 .1rem
+}
+.address-box span{
+    padding-left: .1rem;
+    font-size: .13rem;
+    color: royalblue;
+}
+.address-box h3{
+    margin: 0 .05rem;
+    height: .48rem;
+    line-height: .48rem;
+}
+.address-box a img{
+    width: 100%;
+}
+.address-box ul{
+    line-height: .26rem;
+    margin-top: .1rem;
+    border-top: 1px dotted #ccc;
+    padding: .1rem 0;
+}
+.address-box ul li{position: relative;}
+
+.address-box ul li i {
+    background: url(../img/icon.png) no-repeat center top;
+    position: absolute;
+    top: 0.04rem;
+    height: 16px;
+    width: 20px;
+    margin-right: 5px;
+    background-size: 16px;
+}
+.address-box ul li a{
+    /*display: inline-block;*/
+    padding-left: .26rem;
+}
+.address-box ul .a_tel i{
+    background-position: center -16px;
+}
+.address-box ul .a_time i{
+    background-position: center -49px;
+}
+.address-box ul .a_map i{
+    background-position: center -32px;
+}
+.address-box ul .a_service i{
+    background-position: center -32px;
+}
+
+/*-------------  address end  ------------*/
+
+
+/*-------------  address begin  ------------*/
+.contact{font-size: .14rem;background: #fff;}
+.contact-txt{
+    padding: .2rem;
+    text-align: center;
+    font-size: .2rem;
+    color: royalblue;
+}
+.contact .contact-ul{
+    padding: 0 .3rem;
+}
+.contact .contact-ul .contact-li{
+    color: #aaa;
+    height: .4rem;
+    line-height: .4rem;
+}
+/*-------------  contact end  ------------*/
+
+
